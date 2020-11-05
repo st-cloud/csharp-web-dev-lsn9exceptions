@@ -16,10 +16,6 @@ namespace csharp_web_dev_lsn9exceptions
 
         static int CheckFileExtension(string fileName)
         {
-            //If a student’s submitted file ends in .cs, they get 1 point.
-            //If a student’s submitted file doesn’t end in .cs, they get 0 points.
-            //If the file submitted is null or an empty string, an exception should be thrown.
-            //What kind of exception is up to you!
             if (fileName == "" || fileName == null)
             {
                 throw new ArgumentNullException("Must submit a named file.");
